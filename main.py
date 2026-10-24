@@ -279,7 +279,7 @@ elif(app_mode=="Disease Recognition"):
         st.image(
             test_image,
             caption="Uploaded Leaf Image",
-            width="stretch"
+            use_container_width=True
         )
 
         # Prediction button
