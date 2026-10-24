@@ -276,12 +276,12 @@ elif(app_mode=="Disease Recognition"):
         )
 
         # Show uploaded image
+        test_image.seek(0)
         st.image(
             test_image,
             caption="Uploaded Leaf Image",
-            use_container_width=True
+            width=500
         )
-
         # Prediction button
         if st.button("🔍 Predict Disease"):
 
