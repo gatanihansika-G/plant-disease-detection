@@ -4,7 +4,7 @@ import numpy as np
 
 # --- Professional PlantGuard AI UI ---
 st.set_page_config(
-    page_title="PlantGuard AI | Plant Disease Detection",
+    page_title="PlantGuard | Plant Disease Detection",
     page_icon="🌿",
     layout="wide",
     initial_sidebar_state="expanded",
@@ -100,7 +100,7 @@ with st.sidebar:
     st.markdown("""
     <div class="brand">
         <div class="brand-icon">🌿</div>
-        <div class="brand-title">PlantGuard AI</div>
+        <div class="brand-title">PlantGuard</div>
         <div class="brand-subtitle">Plant Disease Detection</div>
     </div>
     """, unsafe_allow_html=True)
@@ -130,8 +130,8 @@ if(app_mode=="Home"):
     with left:
         st.markdown("""
         <div style="padding:35px 5px 10px;">
-            <div class="hero-badge">🌱 AI-POWERED PLANT HEALTH</div>
-            <div class="page-title">Detect Plant Diseases<br>with AI</div>
+            <div class="hero-badge">🌱 SMART PLANT HEALTH</div>
+            <div class="page-title">Detect Plant Diseases</div>
             <div class="page-subtitle">
                 Upload a plant leaf image and our CNN-based system will analyze it
                 and provide a predicted plant condition with confidence,
