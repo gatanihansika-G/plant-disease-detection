@@ -1,6 +1,7 @@
 import streamlit as st
 import tensorflow as tf
 import numpy as np
+from pathlib import Path
 
 # --- Professional PlantGuard AI UI ---
 st.set_page_config(
@@ -144,7 +145,7 @@ if(app_mode=="Home"):
 
     with right:
         st.markdown('<div class="hero-image">', unsafe_allow_html=True)
-        st.image("home_page.jpeg", width="stretch")
+        st.image(str(Path(__file__).parent / "home_page.jpeg"), width="stretch")
         st.markdown("</div>", unsafe_allow_html=True)
 
     st.markdown("<br>", unsafe_allow_html=True)
